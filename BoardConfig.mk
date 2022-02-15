@@ -27,3 +27,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # Inherit the proprietary files
 include vendor/asus/X01BD/BoardConfigVendor.mk
+
+# Night light fix
+TARGET_USES_DRM_PP := true
