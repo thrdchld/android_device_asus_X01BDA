@@ -30,3 +30,6 @@ include vendor/asus/X01BD/BoardConfigVendor.mk
 
 # Night light fix
 TARGET_USES_DRM_PP := true
+
+# duplicate rules
+BUILD_BROKEN_DUP_RULES := true
