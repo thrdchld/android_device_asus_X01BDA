@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_X01BD.mk
+    $(LOCAL_DIR)/blaze_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_X01BD-eng \
-    voltage_X01BD-user \
-    voltage_X01BD-userdebug
+    blaze_X01BD-eng \
+    blaze_X01BD-user \
+    blaze_X01BD-userdebug
