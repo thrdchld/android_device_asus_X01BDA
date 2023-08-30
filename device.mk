@@ -32,3 +32,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
+
+# call FavoritePrebuiltApps
+$(call inherit-product-if-exists, packages/apps/PrebuiltApps/config.mk)
