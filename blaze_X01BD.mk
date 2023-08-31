@@ -9,10 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common VoltageOS stuff
+# Inherit some common ProjectBlaze stuff
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-
+# ProjectBlaze official
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := khirendra
+TARGET_SUPPORTS_BLUR := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
