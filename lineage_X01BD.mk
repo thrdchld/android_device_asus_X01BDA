@@ -16,6 +16,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+MATRIXX_MAINTAINER := ManitnjG
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X01BD
 PRODUCT_DEVICE := X01BD
