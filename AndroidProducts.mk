@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     lineage_X01BD-eng \
-        everest_X01BD-user \
-        everest_X01BD-userdebug
+        everest_X01BD-ap1a-user \
+        everest_X01BD-ap1a-userdebug
