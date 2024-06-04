@@ -14,7 +14,7 @@ $(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
 
 # Inherit from X01BD device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/asus/X01BD/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
