@@ -9,8 +9,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common risingOS stuff
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# RisingOS variables
+RISING_MAINTAINER := thrdchld
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -18,8 +21,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Gapps Config
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rising_X01BD
+PRODUCT_NAME := lineage_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
