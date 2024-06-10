@@ -22,9 +22,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Gapps Config
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_GAPPS_ARCH := arm64
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X01BD
@@ -39,6 +37,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X01BD_1 \
     PRODUCT_NAME=WW_X01BD \
     PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1 73 release-keys"
+    RISING_MAINTAINER := thrdchld
 
 # Build fingerprint
 BUILD_FINGERPRINT := "asus/WW_X01BD/ASUS_X01BD_1:10/QKQ1/17.2018.2012.434-20201203:user/release-keys"
