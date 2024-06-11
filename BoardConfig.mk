@@ -28,5 +28,9 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Disable AVB for signing build
+BOARD_AVB_ENABLE := false
+BOARD_BUILD_DISABLED_VBMETAIMAGE := true
+
 # Inherit the proprietary files
 include vendor/asus/X01BD/BoardConfigVendor.mk
