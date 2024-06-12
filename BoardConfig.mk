@@ -30,7 +30,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Disable AVB for signing build
 BOARD_AVB_ENABLE := false
-BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 
 # Inherit the proprietary files
 include vendor/asus/X01BD/BoardConfigVendor.mk
